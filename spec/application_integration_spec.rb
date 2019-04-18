@@ -25,4 +25,10 @@ describe "POST '/greet' - User Greeting" do
 
     expect(page).to have_text("Hi Avi, nice to meet you!")
   end
+  
+describe "GET '/' - Greeting Form" do 
+  it 'welcomes the user' do 
+    visit '/'
+    expect(page.body).to include("Welcome!")
+  end 
 end
