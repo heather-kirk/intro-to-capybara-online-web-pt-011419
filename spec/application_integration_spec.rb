@@ -31,4 +31,5 @@ describe "GET '/' - Greeting Form" do
     visit '/'
     expect(page.body).to include("Welcome!")
   end 
+  end 
 end
